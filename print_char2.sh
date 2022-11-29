@@ -1,0 +1,14 @@
+#!/bin/bash
+
+echo "ENTER THE STRING"
+read STR
+
+echo "ENTER THE CHAR WE NEED TO START SUB STRING"
+read START
+
+echo "ENTER THE CHAR WE NEED TO END SUB STRING"
+read END
+
+SUB_STR=${STR:$START:$END}
+
+echo "$SUB_STR"
