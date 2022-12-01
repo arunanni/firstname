@@ -1,14 +1,14 @@
 #!/bin/bash
 
-echo "ENTER THE PATTERN"
-read NAME
+echo "ENTER THE PATTERN TO CHECK"
+read PAT
 
-echo 
-grep -lw $NAME *
+echo
+grep -lw -R $PAT *
+
 if [ $? -eq 0 ];
 then
-	echo "ABOVE FILES ARE CONTANING THE PATTERN $NAME"
+	echo "Above list of files containing the content linux"
 else
-        echo "$NAME PATTERN NOT EXIST"
+	echo "content not found"
 fi
-
