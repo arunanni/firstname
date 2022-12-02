@@ -1,5 +1,4 @@
 #!/bin/bash
-
 factorial()
 {
 	while [ $NUM -ge 1 ];
@@ -9,7 +8,6 @@ factorial()
 	done
 	echo "FACTORIAL OF $VAR is $FACT"
 }
-
 for i in $*
 do
 	FACT=1
