@@ -1,8 +1,6 @@
 #!/bin/bash
-
 declare -a even_list=()
 declare -a odd_list=()
-
 for i in {201..300}
 do
 	if [ `expr $i % 2` -eq 0 ];
